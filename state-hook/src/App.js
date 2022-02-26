@@ -1,7 +1,9 @@
+import { Component } from "react";
 import "./App.css";
 import ClassCounter from "./components/ClassCounter";
 import ClassCounterOne from "./components/ClassCounterOne";
 import ClassMouse from "./components/ClassMouse";
+import ComponentC from "./components/ComponentC";
 import DataFetching from "./components/DataFetching";
 import HookCounter from "./components/HookCounter";
 import HookCounterFour from "./components/HookCounterFour";
@@ -12,6 +14,13 @@ import HookMouse from "./components/HookMouse";
 import IntervalClassCounter from "./components/IntervalClassCounter";
 import IntervalHookCounter from "./components/IntervalHookCounter";
 import MouseContainer from "./components/MouseContainer";
+import React from "react";
+import CounterOne from "./components/CounterOne";
+import CounterTwo from "./components/CounterTwo";
+import CounterThree from "./components/CounterThree";
+
+export const UserContext = React.createContext();
+export const ChannelContext = React.createContext();
 
 function App() {
   return (
@@ -28,7 +37,15 @@ function App() {
       {/* <MouseContainer /> */}
       {/* <IntervalClassCounter /> */}
       {/* <IntervalHookCounter /> */}
-      <DataFetching />
+      {/* <DataFetching /> */}
+      {/* <UserContext.Provider value="Sourabh">
+        <ChannelContext.Provider value="Gupta">
+          <ComponentC />
+        </ChannelContext.Provider>
+      </UserContext.Provider> */}
+      {/* <CounterOne /> */}
+      {/* <CounterTwo /> */}
+      <CounterThree />
     </div>
   );
 }
